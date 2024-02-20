@@ -9,11 +9,10 @@ RUN apt update && apt install -y \
       libicu-dev \
       git && \
       docker-php-ext-install intl && \
-      docker-php-ext-install pdo_mysql && \
+      docker-php-ext-install pdo pdo_mysql && \
       docker-php-ext-install bcmath && \
       docker-php-ext-install gd && \
       docker-php-ext-install zip && \
-      docker-php-ext-install mysqli && \
       apt-get clean && \
       rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
